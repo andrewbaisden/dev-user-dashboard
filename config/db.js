@@ -12,4 +12,14 @@ const connectDB = async () => {
 	}
 };
 
-module.exports = connectDB;
+const dragonball = {
+	id: 1,
+	name: 'Dragonball Super'
+};
+
+const dragonball2 = {
+	id: 1,
+	name: 'Dragonball Super'
+};
+
+module.exports = { connectDB, dragonball, dragonball2 };

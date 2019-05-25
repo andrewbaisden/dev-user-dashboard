@@ -17,4 +17,9 @@ const dragonball = {
 	name: 'Dragonball Super'
 };
 
-module.exports = { connectDB, dragonball };
+const dragonball2 = {
+	id: 1,
+	name: 'Dragonball Super'
+};
+
+module.exports = { connectDB, dragonball, dragonball2 };

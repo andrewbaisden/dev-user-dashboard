@@ -1,7 +1,13 @@
-const connectDB = require('../db');
+const db = require('../db');
 
 describe('runs a function', () => {
-	test('runs async', () => {
-		expect(connectDB()).toBeDefined();
+	it('runs async', () => {
+		expect(db.connectDB()).toBeDefined();
+	});
+});
+
+describe('checks a value', () => {
+	it('check dbz', () => {
+		expect(db.dragonball.name).toBe('Dragonball Super');
 	});
 });

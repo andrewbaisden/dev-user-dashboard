@@ -6,8 +6,8 @@
 	"scripts": {
 		"start": "node server.js",
 		"server": "nodemon server.js",
-		"test": "jest --watchAll",
-		"test:mocha": "mocha"
+		"jest": "jest --watchAll",
+		"test": "mocha"
 	},
 	"author": "Andrew Baisden",
 	"license": "MIT",

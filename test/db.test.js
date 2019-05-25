@@ -17,3 +17,11 @@ describe('Tests dragonball', function() {
 		});
 	});
 });
+
+describe('Tests dragonball', function() {
+	describe('Tests object value', function() {
+		it('should be a id of 1', function() {
+			expect(db.dragonball.id).to.equal(1);
+		});
+	});
+});

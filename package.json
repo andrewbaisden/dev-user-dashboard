@@ -6,7 +6,8 @@
 	"scripts": {
 		"start": "node server.js",
 		"server": "nodemon server.js",
-		"jest": "jest --watchAll",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
 		"test": "mocha"
 	},
 	"author": "Andrew Baisden",
@@ -25,7 +26,6 @@
 	},
 	"devDependencies": {
 		"chai": "^4.2.0",
-		"jest": "^23.6.0",
 		"mocha": "^6.1.4"
 	}
 }

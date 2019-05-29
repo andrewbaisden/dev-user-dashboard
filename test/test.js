@@ -2,6 +2,7 @@ var assert = require('assert');
 
 var expect = require('chai').expect;
 
+// dummy CI setup tests no real logic yet
 describe('Tests', function() {
 	describe('Tests numbers', function() {
 		it('should check numbers', function() {

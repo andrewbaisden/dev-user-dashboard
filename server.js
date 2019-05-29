@@ -1,11 +1,11 @@
 const express = require('express');
-const db = require('./config/db');
+const connectDB = require('./config/db');
 const path = require('path');
 
 const app = express();
 
 // Connect Database
-db.connectDB();
+connectDB();
 
 //Init middleware
 app.use(express.json({ extended: false }));

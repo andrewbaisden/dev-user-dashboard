@@ -1,10 +1,14 @@
 const mongoose = require('mongoose');
-const config = require('config');
-const db = config.get('mongoURI');
+
+const env = require('dotenv').config();
 
 const connectDB = async () => {
 	try {
-		await mongoose.connect(db, { useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false });
+		await mongoose.connect(env.parsed.DB_HOST, {
+			useNewUrlParser: true,
+			useCreateIndex: true,
+			useFindAndModify: false
+		});
 		console.log('MongoDB Connected...');
 	} catch (err) {
 		console.error(err.message);
@@ -12,14 +16,4 @@ const connectDB = async () => {
 	}
 };
 
-const dragonball = {
-	id: 1,
-	name: 'Dragonball Super'
-};
-
-const dragonball2 = {
-	id: 1,
-	name: 'Dragonball Super'
-};
-
-module.exports = { connectDB, dragonball, dragonball2 };
+module.exports = connectDB;

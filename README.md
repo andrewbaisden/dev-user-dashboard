@@ -1,6 +1,6 @@
 # Dev User Dashboard App
 
-![Dev User Dashboard App](https://res.cloudinary.com/d74fh3kw/image/upload/v1582565933/dev_community_mwzwkm.jpg 'Dev User Dashboard App')
+![Dev User Dashboard App](/img/dev-user-dashboard.jpeg 'Dev User Dashboard App')
 
 ## Install and Setup
 
